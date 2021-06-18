@@ -2,7 +2,15 @@
   "profiles": {
     "SQLToolkit": {
       "commandName": "Project",
-      "commandLineArgs": "backup -s labs-uat.devopshub.cn,1333 -n devopslabs -u sa -p P2ssw0rd -path /home/backup/devops.bak"
+      //"commandLineArgs": "backup -s 192.168.2.55,1433 -n cj -u sa -p 123456 -path D://cj/DB/12.bak"
+      //"commandLineArgs": " restore -s 192.168.2.55 -n SOP -u sa -p 123456 -path D:\\cj\\DB\\SOP.bak"
+      "commandLineArgs": " runscripts  -s 192.168.2.55 -n SOP -u sa -p 123456 -path D:\\WorkSpace\\DbUpdate\\2.0.11\\2.0.10"
+    },
+    
+    "WSL 2": {
+      "commandName": "WSL2",
+      "environmentVariables": {},
+      "distributionName": ""
     }
   }
 }
